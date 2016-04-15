@@ -1,0 +1,16 @@
+<%require_relative'../lib/fake.rb'%>
+<!doctype html>
+<html>
+  <head>
+      <title>FILMS</title>
+  </head>
+  <body>
+      <h1>MOVIE POSTERS</h1>
+      <div>
+        <%@fake.movie_array.each do |movie|%>
+          <img src="<%=movie%>">
+        <%end%>
+    
+      </div>
+  </body>
+</html>
